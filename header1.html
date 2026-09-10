@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>My Layout</title>
+
+    <style>
+
+        body {
+            margin: 0;
+            font-family: Arial;
+        }
+
+        /* Header */
+        .header {
+            height: 80px;
+            background-color: orange;
+            color: white;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            font-size: 30px;
+        }
+
+
+        /* Navigation */
+        .nav {
+            height: 60px;
+            display: flex;
+
+            justify-content: space-around;
+            align-items: center;
+
+            font-size: 20px;
+        }
+
+
+        /* Left and Right */
+        .main {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+
+        .left {
+            height: 200px;
+            border: 1px solid black;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .right {
+            height: 200px;
+            border: 1px solid black;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+
+        /* Colors */
+        .colors {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+        }
+
+        .blue {
+            height: 100px;
+            background-color: blue;
+            color: white;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            border: 1px solid white;
+        }
+
+        .red {
+            height: 100px;
+            background-color: red;
+            color: white;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            border: 1px solid white;
+        }
+
+        .green {
+            height: 100px;
+            background-color: green;
+            color: white;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            border: 1px solid white;
+        }
+
+        .yellow {
+            height: 100px;
+            background-color: yellow;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            border: 1px solid white;
+        }
+
+
+        /* Numbers */
+        .numbers {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        }
+
+        .number {
+            height: 80px;
+            border: 1px solid black;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            font-size: 20px;
+        }
+
+
+        /* Footer */
+        .footer {
+            height: 60px;
+            background-color: black;
+            color: white;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            font-size: 25px;
+        }
+
+    </style>
+</head>
+
+
+<body>
+
+    <!-- Header -->
+    <div class="header">
+        Header
+    </div>
+
+
+    <!-- Navigation -->
+    <div class="nav">
+
+        <div>Home</div>
+
+        <div>About</div>
+
+        <div>Login</div>
+
+    </div>
+
+
+    <!-- Left and Right -->
+    <div class="main">
+
+        <div class="left">
+            Left
+        </div>
+
+        <div class="right">
+            Right
+        </div>
+
+    </div>
+
+
+    <!-- Color Boxes -->
+    <div class="colors">
+
+        <div class="blue">
+            Blue
+        </div>
+
+        <div class="red">
+            Red
+        </div>
+
+        <div class="green">
+            Green
+        </div>
+
+        <div class="yellow">
+            Yellow
+        </div>
+
+    </div>
+
+
+    <!-- Number Boxes -->
+    <div class="numbers">
+
+        <div class="number">Box1</div>
+
+        <div class="number">Box2</div>
+
+        <div class="number">Box3</div>
+
+        <div class="number">Box4</div>
+
+        <div class="number">Box5</div>
+
+    </div>
+
+
+    <!-- Footer -->
+    <div class="footer">
+        Footer
+    </div>
+
+</body>
+
+</html>

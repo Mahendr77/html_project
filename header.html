@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple Layout</title>
+
+    <style>
+         .header{
+            background-color: red;
+            color:white;
+            text-align: center;
+        }
+        .nav {
+          display:flex;
+          justify-content: space-around;  
+        font-size: 20px;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial;
+        }
+
+        /* Header */
+        header {
+            height: 180px;
+            background-color: orangered;
+            color: white;
+            text-align: center;
+        }
+
+        h1 {
+            margin: 0;
+            padding: 30px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            font-size: 20px;
+        }
+
+
+        /* Main layout */
+        .main {
+            display: grid;
+            grid-template-columns: 75% 25%;
+        }
+
+
+        /* Left side */
+        .left {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+
+
+        /* Small boxes */
+        .box {
+            height: 300px;
+            background-color: skyblue;
+            border: 2px solid white;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+
+        /* Main content */
+        .content {
+            height: 170px;
+            background-color: yellow;
+
+            grid-column: 1 / 4;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+
+        /* Sidebar */
+        .sidebar {
+            background-color: lightgreen;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+
+        /* Footer */
+        footer {
+            height: 40px;
+            background-color: blue;
+            color: white;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            font-size: 25px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <header>
+
+        <h1>Header Element</h1>
+<div class="nav">
+
+        <div>Home</div>
+<div>About</div>  
+<div>Contact</div> 
+</div>    
+
+    <div class="main">
+
+        <div class="left">
+
+            <div class="box">SmallBox1</div>
+
+            <div class="box">SmallBox2</div>
+
+            <div class="box">SmallBox3</div>
+
+            <div class="content">
+                MainContent
+            </div>
+
+        </div>
+
+
+        <div class="sidebar">
+            Side Bar
+        </div>
+
+    </div>
+
+
+    <footer>
+        Footer
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blessy's Website</title>
+    <style>
+        /* Removes unwanted default browser gaps around the edges */
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Fixed header layout */
+        .header {
+            background-color: red;
+            height: 100px;
+            width: 100%;
+            
+            /* Center aligns your name perfectly inside the red bar */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .header h1 {
+            margin: 0;
+            color: white; /* Made text white for readability against red */
+            font-family: sans-serif;
+        }
+
+        /* Banner container spacing */
+        .banner {
+            width: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Forces the image to fit the container without overflowing */
+        .banner img {
+            width: 100%;
+            height: auto;   /* Maintains original proportions */
+            display: block; /* Removes mysterious default bottom gap */
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="header">
+        <h1>Blessy</h1>
+    </div>
+
+    <div class="banner">
+        <img src="image.jpg" alt="Banner Image">
+    </div>
+
+</body>
+
+</html>
